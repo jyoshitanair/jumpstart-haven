@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://chrc5bvf0fjr1"]
+
+[ext_resource type="Texture2D" uid="uid://ndyc2yj2g8x5" path="res://assets/fish/Screenshot_2026-06-04_212848-removebg-preview.png" id="1_5j8m4"]
+[ext_resource type="Script" uid="uid://bw6ph6s1bvqn7" path="res://scripts/colectables.gd" id="1_l3fx8"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_cqrfi"]
+radius = 79.0
+
+[node name="Colectables" type="Node2D" unique_id=1270232208]
+scale = Vector2(0.3, 0.3)
+script = ExtResource("1_l3fx8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=568955696]
+position = Vector2(-10.25, -2.3750014)
+scale = Vector2(0.37631583, 0.3807078)
+texture = ExtResource("1_5j8m4")
+
+[node name="Area2D" type="Area2D" parent="." unique_id=11306313]
+position = Vector2(-10.25, -2.3750014)
+scale = Vector2(0.37631583, 0.3807078)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1193224776]
+position = Vector2(37.867126, 0.9850111)
+scale = Vector2(2.6573422, 2.6266863)
+shape = SubResource("CircleShape2D_cqrfi")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
