@@ -34,13 +34,14 @@ Tech Stack
 
 Features
 ========================================
-⭐️A mangager global file to store the total bubbles
+⭐️A manager<img width="1832" height="1016" alt="game-play" src="https://github.com/user-attachments/assets/5885e009-212a-4a66-94de-e30fcef306dd" />
+ global file to store the total bubbles
 
 
-⭐️A win and loose screen
+⭐️A win and lose screen
 
 
-⭐️Isometic tiles :D
+⭐️Isometric tiles :D
 
 
 ⭐️cool old art done by me!
@@ -77,10 +78,14 @@ it got a lot easier haha. It was also easy logic that i'm already familiar with 
 SCREENSHOTS
 ========================================
 1) Win 
-
+<img width="1812" height="1007" alt="win" src="https://github.com/user-attachments/assets/70b6705d-badd-445e-8c62-3b81ba73152e" />
 2) Lose
+<img width="1812" height="1006" alt="lose" src="https://github.com/user-attachments/assets/e40f3bf5-9771-485a-aca9-58a3e4d56e76" />
 
-3) Gameplay
+
+4) Gameplay
+<img width="1832" height="1016" alt="game-play" src="https://github.com/user-attachments/assets/5d1815e9-b415-463f-8ca5-76b40738700b" />
+
 
 
 
