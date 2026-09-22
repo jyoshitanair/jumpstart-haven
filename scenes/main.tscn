@@ -8,18 +8,19 @@
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ndyak"]
 normal = Vector2(0, 1)
-distance = -835.0
+distance = -684.0
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_dtt2r"]
-distance = -925.0
+normal = Vector2(-0.004225314, -0.99999106)
+distance = -629.08734
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fjn2v"]
-normal = Vector2(-1, 0)
-distance = -1605.0
+normal = Vector2(-0.9999978, 0.002087678)
+distance = -1201.0538
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_jhjvj"]
 normal = Vector2(1, 0)
-distance = -715.0
+distance = -287.0
 
 [node name="Main" type="Node2D" unique_id=1148802206]
 script = ExtResource("1_jyhfs")
