@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://coah2c1ive3hs"]
+
+[ext_resource type="Texture2D" uid="uid://cvpa07bctlqah" path="res://assets/fish/spritesheet (5).png" id="1_r4oei"]
+
+[node name="Win" type="Node2D" unique_id=533718875]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1246968498]
+offset_right = 1179.0
+offset_bottom = 666.0
+color = Color(0.9643646, 0.9268186, 0.88960636, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1177153065]
+position = Vector2(897, 209.375)
+scale = Vector2(0.8274113, 0.84491533)
+texture = ExtResource("1_r4oei")
+
+[node name="Label" type="Label" parent="." unique_id=868785777]
+offset_left = 83.0
+offset_top = 64.0
+offset_right = 903.0
+offset_bottom = 613.0
+theme_override_colors/font_color = Color(0.29803878, 0.09602971, 0.13747051, 1)
+theme_override_font_sizes/font_size = 200
+text = "Yay! 
+You win!"

@@ -24,33 +24,131 @@ distance = -715.0
 [node name="Main" type="Node2D" unique_id=1148802206]
 script = ExtResource("1_jyhfs")
 
-[node name="canvas" type="CanvasLayer" parent="." unique_id=1957591945]
+[node name="World" parent="." unique_id=873468372 instance=ExtResource("1_0wfyh")]
+position = Vector2(46.00006, 1.5258789e-05)
+scale = Vector2(0.2, 0.2)
 
-[node name="collected" type="Panel" parent="canvas" unique_id=626367283]
-offset_left = -319.0
-offset_top = -309.0
-offset_right = -99.0
-offset_bottom = -268.0
+[node name="Player" parent="." unique_id=161498960 instance=ExtResource("2_sugp2")]
+scale = Vector2(0.45, 0.45)
+
+[node name="boundaries" type="StaticBody2D" parent="." unique_id=1848665971]
+position = Vector2(-404, 0)
+script = ExtResource("3_sugp2")
+
+[node name="up" type="CollisionShape2D" parent="boundaries" unique_id=2075058358]
+shape = SubResource("WorldBoundaryShape2D_ndyak")
+
+[node name="down" type="CollisionShape2D" parent="boundaries" unique_id=20872977]
+shape = SubResource("WorldBoundaryShape2D_dtt2r")
+
+[node name="left" type="CollisionShape2D" parent="boundaries" unique_id=1818026381]
+shape = SubResource("WorldBoundaryShape2D_fjn2v")
+
+[node name="right" type="CollisionShape2D" parent="boundaries" unique_id=973317957]
+shape = SubResource("WorldBoundaryShape2D_jhjvj")
+
+[node name="bubbles" type="Node2D" parent="." unique_id=124444859]
+
+[node name="Colectables" parent="bubbles" unique_id=1270232208 instance=ExtResource("5_tbgi4")]
+position = Vector2(-300, 0)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables2" parent="bubbles" unique_id=623633571 instance=ExtResource("5_tbgi4")]
+position = Vector2(488.99994, -257.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables3" parent="bubbles" unique_id=304607519 instance=ExtResource("5_tbgi4")]
+position = Vector2(332.99994, 285.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables4" parent="bubbles" unique_id=369577377 instance=ExtResource("5_tbgi4")]
+position = Vector2(-462, -399.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables5" parent="bubbles" unique_id=1839214939 instance=ExtResource("5_tbgi4")]
+position = Vector2(-603, 292.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables6" parent="bubbles" unique_id=1590090224 instance=ExtResource("5_tbgi4")]
+position = Vector2(216.99994, -443.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables7" parent="bubbles" unique_id=948288908 instance=ExtResource("5_tbgi4")]
+position = Vector2(504.99994, 468.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables8" parent="bubbles" unique_id=251827345 instance=ExtResource("5_tbgi4")]
+position = Vector2(-113.000015, 308.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables9" parent="bubbles" unique_id=1514588673 instance=ExtResource("5_tbgi4")]
+position = Vector2(-124.000015, -231.99998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables10" parent="bubbles" unique_id=1890841880 instance=ExtResource("5_tbgi4")]
+position = Vector2(-543, -175.99998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables11" parent="bubbles" unique_id=1184645616 instance=ExtResource("5_tbgi4")]
+position = Vector2(158.99997, -256.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables12" parent="bubbles" unique_id=2142910174 instance=ExtResource("5_tbgi4")]
+position = Vector2(-282, 311.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables13" parent="bubbles" unique_id=1935872915 instance=ExtResource("5_tbgi4")]
+position = Vector2(92.99997, 216.99998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables14" parent="bubbles" unique_id=1545960175 instance=ExtResource("5_tbgi4")]
+position = Vector2(-135.00002, 102.99999)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables15" parent="bubbles" unique_id=353386767 instance=ExtResource("5_tbgi4")]
+position = Vector2(-414, 330.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables16" parent="bubbles" unique_id=1645826313 instance=ExtResource("5_tbgi4")]
+position = Vector2(-293, -153.99998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables17" parent="bubbles" unique_id=1283173790 instance=ExtResource("5_tbgi4")]
+position = Vector2(-171.00002, -477.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables18" parent="bubbles" unique_id=25964707 instance=ExtResource("5_tbgi4")]
+position = Vector2(-561, 84.99999)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables19" parent="bubbles" unique_id=2110085140 instance=ExtResource("5_tbgi4")]
+position = Vector2(530.99994, 164.99998)
+scale = Vector2(0.2, 0.2)
+
+[node name="Colectables20" parent="bubbles" unique_id=64551101 instance=ExtResource("5_tbgi4")]
+position = Vector2(-396, 422.99997)
+scale = Vector2(0.2, 0.2)
+
+[node name="canvas" type="CanvasLayer" parent="." unique_id=613487829]
+
+[node name="hud" type="Control" parent="canvas" unique_id=1146134603]
+z_index = 100
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1156.0
+offset_bottom = 652.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="time" type="Panel" parent="canvas/hud" unique_id=1485926332]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 8.0
+offset_right = 245.0
+offset_bottom = 49.0
 metadata/_edit_group_ = true
 
-[node name="Label" type="Label" parent="canvas/collected" unique_id=1950037959]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-text = "Collected Bubble 0/10"
-horizontal_alignment = 1
-vertical_alignment = 1
-
-[node name="time" type="Panel" parent="canvas" unique_id=2115819609]
-offset_left = -561.0
-offset_top = -309.0
-offset_right = -341.0
-offset_bottom = -268.0
-
-[node name="Label" type="Label" parent="canvas/time" unique_id=875844745]
+[node name="Label" type="Label" parent="canvas/hud/time" unique_id=326709312]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -61,31 +159,41 @@ text = "Elapsed Time: 0 seconds"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="World" parent="." unique_id=873468372 instance=ExtResource("1_0wfyh")]
-position = Vector2(46.00006, 1.5258789e-05)
-scale = Vector2(0.2, 0.2)
+[node name="collected" type="Panel" parent="canvas/hud" unique_id=1571908910]
+layout_mode = 0
+offset_left = 293.0
+offset_top = 11.0
+offset_right = 513.0
+offset_bottom = 52.0
+metadata/_edit_group_ = true
 
-[node name="Player" parent="." unique_id=93441490 instance=ExtResource("2_sugp2")]
-scale = Vector2(0.45, 0.45)
+[node name="Label" type="Label" parent="canvas/hud/collected" unique_id=719076781]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Collected Bubble 0/10"
+horizontal_alignment = 1
+vertical_alignment = 1
 
-[node name="boundaries" type="StaticBody2D" parent="." unique_id=341337512]
-position = Vector2(-404, 0)
-script = ExtResource("3_sugp2")
+[node name="instructions" type="Panel" parent="canvas" unique_id=1288971293]
+offset_left = 835.0
+offset_top = 13.0
+offset_right = 1140.0
+offset_bottom = 54.0
+metadata/_edit_group_ = true
 
-[node name="up" type="CollisionShape2D" parent="boundaries" unique_id=738168388]
-shape = SubResource("WorldBoundaryShape2D_ndyak")
-
-[node name="down" type="CollisionShape2D" parent="boundaries" unique_id=1551658040]
-shape = SubResource("WorldBoundaryShape2D_dtt2r")
-
-[node name="left" type="CollisionShape2D" parent="boundaries" unique_id=1140292360]
-shape = SubResource("WorldBoundaryShape2D_fjn2v")
-
-[node name="right" type="CollisionShape2D" parent="boundaries" unique_id=1593501570]
-shape = SubResource("WorldBoundaryShape2D_jhjvj")
-
-[node name="bubbles" type="Node2D" parent="." unique_id=1591037852]
-
-[node name="Colectables" parent="bubbles" unique_id=1270232208 instance=ExtResource("5_tbgi4")]
-position = Vector2(-300, 0)
-scale = Vector2(0.1, 0.1)
+[node name="Label" type="Label" parent="canvas/instructions" unique_id=1942658648]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -29.0
+offset_right = 6.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Collect 20 bubbles in 1 minute"
+horizontal_alignment = 1
+vertical_alignment = 1
