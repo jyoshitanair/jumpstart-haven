@@ -17,7 +17,7 @@ https://github.com/jyoshitanair/jumpstart-haven
 
 HOW TO ACSESS
 ========================================
-ITCH.IO: https://crewshon.vercel.app/
+ITCH.IO: https://jyoshitanair.itch.io/i-like-eating-bubbles
 
 
 DESCRIPTION
